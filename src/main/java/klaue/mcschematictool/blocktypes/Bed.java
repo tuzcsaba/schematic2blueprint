@@ -73,6 +73,7 @@ public class Bed extends DirectionalBlock {
 
 	@Override
 	public void setData(byte data) {
+		data = (byte)(data & 0x8 & 0x3);
 		if (data < 0 || data > 11) throw new IllegalArgumentException("data out of range: " + data);
 		
 		byte head = (byte) (data & 8); // 1000(bin) if true, 0000 if false

@@ -375,7 +375,7 @@ public class ImageProvider {
 					case 0:
 					default:	return ImageProvider.getImage("sandstone_normal");
 				}
-			case 25:	return ImageProvider.getImage("musicBlock");
+			case 25:	return ImageProvider.getImage("noteblock");
 			case 26: // Bed
 				if ((data & 8) == 0) { // foot
 					return ImageProvider.getImage("bed_feet_top");
@@ -452,8 +452,8 @@ public class ImageProvider {
 				}
 			case 39:	return ImageProvider.getImage("mushroom_brown");
 			case 40:	return ImageProvider.getImage("mushroom_red");
-			case 41:	return ImageProvider.getImage("blockGold");
-			case 42:	return ImageProvider.getImage("blockIron");
+			case 41:	return ImageProvider.getImage("gold_block");
+			case 42:	return ImageProvider.getImage("iron_block");
 			case 43:
 			case 44:// stone slab
 				// all double slabs beside stone look just like the regular blocks and the slabs like half of the regular blocks
@@ -487,20 +487,20 @@ public class ImageProvider {
 					return ImageProvider.getAdditionalImage("redstone_wire_off");
 				}
 				return ImageProvider.getAdditionalImage("redstone_wire_on");
-			case 56:	return ImageProvider.getImage("oreDiamond");
-			case 57:	return ImageProvider.getImage("blockDiamond");
+			case 56:	return ImageProvider.getImage("diamond_ore");
+			case 57:	return ImageProvider.getImage("diamond_block");
 			case 58:	return ImageProvider.getImage("crafting_table_top");
 			case 59: // Crops
 				switch(data) {
 					case 0: // crops below 3 are so tiny that you
 					case 1: // wouldn't recognise them, so we
 					case 2: // start at 3
-					case 3:	return ImageProvider.getImage("crops_3");
-					case 4:	return ImageProvider.getImage("crops_4");
-					case 5:	return ImageProvider.getImage("crops_5");
-					case 6:	return ImageProvider.getImage("crops_6");
+					case 3:	return ImageProvider.getImage("wheat_stage_3");
+					case 4:	return ImageProvider.getImage("wheat_stage_4");
+					case 5:	return ImageProvider.getImage("wheat_stage_5");
+					case 6:	return ImageProvider.getImage("wheat_stage_6");
 					case 7:
-					default:	return ImageProvider.getImage("crops_7");
+					default:	return ImageProvider.getImage("wheat_stage_7");
 				}
 			case 60: // farmland
 				if (data >= 4) return ImageProvider.getImage("farmland_wet");
@@ -538,7 +538,7 @@ public class ImageProvider {
 			case 84:	return ImageProvider.getImage("jukebox_top");
 			case 85:	return ImageProvider.getAdditionalImage("fence");
 			case 86:	return ImageProvider.getImage("pumpkin_top");
-			case 87:	return ImageProvider.getImage("hellrock"); // Netherrack
+			case 87:	return ImageProvider.getImage("netherrack"); // Netherrack
 			case 88:	return ImageProvider.getImage("hellsand"); // Soul Sand
 			case 89:	return ImageProvider.getImage("glowstone");			// Glowstone Block
 			case 90:	return ImageProvider.getAdditionalImage("portal");
@@ -621,26 +621,26 @@ public class ImageProvider {
 			case 141: // carrot
 				switch(data) {
 					case 0:
-					case 1:	return ImageProvider.getImage("carrots_0");
+					case 1:	return ImageProvider.getImage("carrots_stage_0");
 					case 2:
-					case 3:	return ImageProvider.getImage("carrots_1");
+					case 3:	return ImageProvider.getImage("carrots_stage_1");
 					case 4:
 					case 5:
-					case 6:	return ImageProvider.getImage("carrots_2");
+					case 6:	return ImageProvider.getImage("carrots_stage_2");
 					case 7:
-					default:	return ImageProvider.getImage("carrots_3");
+					default:	return ImageProvider.getImage("carrots_stage_3");
 				}
 			case 142: // potatoes
 				switch(data) {
 					case 0:
-					case 1:	return ImageProvider.getImage("potatoes_0");
+					case 1:	return ImageProvider.getImage("potatoes_stage_0");
 					case 2:
-					case 3:	return ImageProvider.getImage("potatoes_1");
+					case 3:	return ImageProvider.getImage("potatoes_stage_1");
 					case 4:
 					case 5:
-					case 6:	return ImageProvider.getImage("potatoes_2");
+					case 6:	return ImageProvider.getImage("potatoes_stage_2");
 					case 7:
-					default:	return ImageProvider.getImage("potatoes_3");
+					default:	return ImageProvider.getImage("potatoes_stage_3");
 				}
 			case 143:	return ImageProvider.getAdditionalImage("button_wood");
 			case 144:	return ImageProvider.getItemImage("skull_char"); // other heads determined trough tile entity
